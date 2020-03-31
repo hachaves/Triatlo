@@ -48,7 +48,7 @@ public class ThreadTriatlo extends Thread {
 
 	private void correr() {
 
-		System.out.println("Jogador " + nJogador + " iniciou a corrida");
+		System.out.println("nº " + nJogador + " correndo");
 
 		int distanciaPercorrida = 0;
 
@@ -66,7 +66,7 @@ public class ThreadTriatlo extends Thread {
 
 		int tiros = 0;
 
-		System.out.println("Jogador " + nJogador + " alcançou uma arma");
+		System.out.println("nº " + nJogador + " atirando");
 
 		while (tiros < 3) {
 			try {
@@ -81,7 +81,7 @@ public class ThreadTriatlo extends Thread {
 
 	private void pedalar() {
 
-		System.out.println("Jogador " + nJogador + " alcançou uma bicicleta");
+		System.out.println("nº " + nJogador + " pedalando");
 		int distanciaPercorrida = 0;
 		while (5000 > distanciaPercorrida) {
 			distanciaPercorrida += (int) ((Math.random() * 11) + 30);
@@ -126,7 +126,7 @@ public class ThreadTriatlo extends Thread {
 
 		for (int i = 0; i < colocacao.length; i++) {
 
-			System.out.println("Jogador " + colocacao[i][0] + "\n PONTOS: " + colocacao[i][1]);
+			System.out.println("nº" + colocacao[i][0] + " pontuação: " + colocacao[i][1]);
 
 		}
 
